@@ -7,6 +7,7 @@
 
 import pyautogui
 import time
+import pandas
 email = "seu_email@gmail.com"
 senha = "sua_senha"
 time.PAUSE = 0.3
@@ -29,9 +30,6 @@ pyautogui.write(senha)
 pyautogui.press('tab')
 pyautogui.press('enter')
 time.sleep(5)
-
-
-import pandas
 
 Tabela = pandas.read_csv('Produtos.csv')
 print(Tabela)
@@ -57,9 +55,8 @@ for linha in Tabela.index:
     pyautogui.write(custo)
     pyautogui.press('tab')
     obs = str(Tabela.loc[linha, 'obs'])
-    if obs != 'nan':
+    if pandas.notna(obs):
         pyautogui.write(str(obs))
-
     pyautogui.press('tab')
     pyautogui.press('enter')
 
