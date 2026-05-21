@@ -10,13 +10,14 @@ import time
 import pandas
 email = "seu_email@gmail.com"
 senha = "sua_senha"
-time.PAUSE = 0.3
+time.PAUSE = 0.5
 
 
 pyautogui.press('win')
 pyautogui.write('chrome')
 pyautogui.press('enter')
 time.sleep(2)
+
 
 pyautogui.click(x=257, y=53)
 pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')
