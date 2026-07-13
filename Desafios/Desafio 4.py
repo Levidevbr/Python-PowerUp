@@ -1,0 +1,10 @@
+leitura = input('Digite algo: ')
+resultado = leitura
+print(f'O valor digitado "{leitura}", É {resultado.isnumeric()} para numero!'.format(leitura, resultado))
+print(f'Só tem espaço? {leitura.isspace()}')
+print(f'Tipo primitivo? {type(leitura)}')
+print(f'É alfabetico? {leitura.isalpha()}')
+print(f'É alfanumerico? {leitura.isalnum()}')
+print(f'Está em maiúsculas? {leitura.isupper()}')
+print(f'Está em minusculas? {leitura.islower()}')
+print(f'Está capitalizada? {leitura.istitle()}')

@@ -1,2 +1,2 @@
-n1 = input("Digite um valor: ")
-print(n1.isdecimal())
+n1 = input('Digite um numero: ')
+print(n1.isnumeric())
