@@ -15,6 +15,7 @@ Projeto desenvolvido durante meus estudos de Python com o objetivo de praticar o
 
 - Python 3
 - VS Code
+- PyCharm
 
 ---
 
@@ -96,7 +97,7 @@ GitHub:
 https://github.com/Levidevbr
 
 LinkedIn:
-*(adicione aqui quando criar)*
+https://www.linkedin.com/in/leonardo-vinicius-rosa-de-sousa-7440b311a/
 
 ---
 
