@@ -1,9 +1,6 @@
 import time
 import random
 
-pedra = 0
-papel = 1
-tesoura = 2
 aleatorio = random.randint(0,2)
 
 print('Suas opções: ')
@@ -20,4 +17,26 @@ print('KEN')
 time.sleep(0.5)
 print('PO!!!')
 
-if jogada == 0:
+if jogada == aleatorio:
+    print('houve um empate!')
+
+elif jogada == 0 and aleatorio == 1:
+    print(f'MAQUINA VENCEU com PAPEL!')
+
+elif jogada == 0 and aleatorio == 2:
+    print('JOGADOR VENCEU com PEDRA!')
+
+elif jogada == 1 and aleatorio == 0:
+    print(f'JOGADOR VENCEU com PAPEL!')
+
+elif jogada == 1 and aleatorio == 2:
+        print(f'MAQUINA VENCEU com TESOURA!')
+
+elif jogada == 2 and aleatorio == 0:
+    print(f'MAQUINA VENCEU com PEDRA!')
+
+elif jogada == 2 and aleatorio == 1:
+    print(f'JOGADOR VENCEU com TESOURA!')
+
+else:
+    print('FAVOR DIGITAR UMA OPÇÃO VALIDA!')
