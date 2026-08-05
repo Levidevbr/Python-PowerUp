@@ -93,10 +93,10 @@ Cada exercício foi desenvolvido para fortalecer minha lógica de programação 
 
 **Leonardo Vinicius**
 
-GitHub:
+🔗 GitHub:
 https://github.com/Levidevbr
 
-LinkedIn:
+🔗 LinkedIn:
 https://www.linkedin.com/in/leonardo-vinicius-rosa-de-sousa-7440b311a/
 
 ---
