@@ -1,28 +1,21 @@
 import random
-
 lista = [0,1,2,3,4,5,6,7,8,9,10]
-jogador = -1
-escolhido = random.choice(lista)
-tentativa = 0
+tentativa = 1
+
+aleatorio = random.choice(lista)
 
 print("Sou seu computador...")
-print("Acabei de pensar em um numero entre 0 a 10.")
-print("Será que você consegue adivinhar qual foi?")
+print("Acabei de pensar um numero de 0 a 10")
+print("Será que você consegue adivinhar???")
 
-while jogador != escolhido:
-    jogador = int(input("Qual é seu palpite? "))
+usuario = int(input("Qual é seu palpite? "))
+
+while aleatorio != usuario:
     tentativa += 1
-
-    if jogador != escolhido:
-
-        print("Você errou!")
-
-        if jogador < escolhido:
-            print("Digite um numero mais alto!")
-
-        elif jogador > escolhido:
-            print("Digite um numero mais baixo!")
-            
-    else:
-        print("Você acertou!")
-        print(f"Foi necessario {tentativa} jogadas.")
+    if usuario > aleatorio:
+        usuario = int(input("Digite um valor menor... Tente novamente! "))
+    elif usuario < aleatorio:
+        usuario = int(input("Digite um valor maior... Tente novamente! "))
+else:
+    print(f"Parabens você acertou o numero sorteado({aleatorio})! ")
+    print(f"Foi necessario {tentativa} para acertar!")
